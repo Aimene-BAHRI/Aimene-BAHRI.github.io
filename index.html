@@ -546,8 +546,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text text-center pt-20">
-                            <p>Copyright © 20220. Template Crafted by <a href="https://uideck.com"
-                                    rel="nofollow">UIdeck</a></p>
+                            <p>Copyright © <strong id="year">2020</strong>. Template Crafted by <a href="https://uideck.com"
+                                rel="nofollow">UIdeck</a>
+                            </p>
                         </div> <!-- copyright text -->
                     </div>
                 </div> <!-- row -->
@@ -592,6 +593,11 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        console.log('hi')
+        $("#year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
