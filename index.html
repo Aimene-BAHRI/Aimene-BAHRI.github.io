@@ -196,7 +196,7 @@
                                         <i class="lni-calendar"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p>30 AUG 1994</p>
+                                        <p >30 AUG 1994 (<strong id="age"></strong>)</p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -546,7 +546,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text text-center pt-20">
-                            <p>Copyright © <strong id="year">2020</strong>. Template Crafted by <a href="https://uideck.com"
+                            <p>Copyright © <strong id="year"></strong>. Template Crafted by <a href="https://uideck.com"
                                 rel="nofollow">UIdeck</a>
                             </p>
                         </div> <!-- copyright text -->
@@ -596,7 +596,16 @@
 
     <script>
         console.log('hi')
-        $("#year").innerHTML = new Date().getFullYear();
+        var today = new Date();
+        console.log(today)
+        var birthDate = new Date("08/30/1994");
+        console.log(birthDate)
+        var age = today.getFullYear() - birthDate.getFullYear()
+        console.log(age)
+        var year =  today.getFullYear();
+        console.log(year)
+        $("#age").html(age)
+        $("#year").html(year)
     </script>
 </body>
 
