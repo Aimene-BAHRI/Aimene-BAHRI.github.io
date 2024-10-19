@@ -184,11 +184,20 @@
                     <div class="about-content mt-50">
                         <h5 class="about-title">SO, I</h5>
                         <p>
-                            <strong>L</strong>ead large IT projects, including the design and deployment of new IT
-                            systems and services <br>
+                            <strong>L</strong>ead large IT projects, including the design and deployment of new IT systems and services <br>
                             <strong>H</strong>elp define IT infrastructure strategy, architecture, and processes <br>
-                            <strong>2</strong>-5 years of experience working in IT operations
+                            <strong><span id="experience"></span></strong> years of experience working in IT operations
                         </p>
+                        
+                        <script>
+                            // Assuming the base year of experience started in 2017 (5 years in 2022)
+                            const startYear = 2017;
+                            const currentYear = new Date().getFullYear();
+                            const experience = currentYear - startYear;
+                            
+                            // Update the span with the calculated experience
+                            document.getElementById("experience").textContent = experience;
+                        </script>
                         <ul class="clearfix">
                             <li>
                                 <div class="single-info d-flex align-items-center">
